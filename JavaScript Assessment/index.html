@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <form>
+        <h1> Booking</h1>
+        <label for="">Choice of booking :</label>
+        <select name="day-booking" id="day-booking" onchange="change()">
+          <option value="full-day">Full day Booking</option>
+          <option value="half-day">Half day Booking</option>
+          <option value="hourly-day">Hourly day Booking</option>
+        </select>
+  
+        <label for="">User Name :</label>
+        <input type="text" name="" id="username" />
+         <b id="user"></b>
+        <label for="">Mobile Number :</label>
+        <input type="number" name="" id="inpt-mobile"  pattern="[0-9]{10}" />
+          <b id="mobile"></b>
+        <label for="">Email :</label>
+        <input type="email" name="" id="inpt_email" />
+       <b id="email"></b>
+        <label for="">Number Of Persons :</label>
+        <input type="number" name="" id="no-Persons" />
+         <b id="Persons"></b>
+        <label for="">Date :</label>
+        <input type="date" name="" id="inpt-date" />
+        <b id="date"></b>
+        <div class="slot" style="display: none">
+          <label for="">Slot :</label>
+          <select name="" id="">
+            <option value="">Breakfast</option>
+            <option value="">Lunch</option>
+            <option value="">Dinner</option>
+          </select>
+        </div>
+  
+        <div class="time" style="display: none">
+          <label for="">Slot :</label>
+          <input type="time" name="" id="inpt-time" />
+          <b id="time"></b>
+  
+        </div>
+  
+        <button type="submit" onclick=" return err()" >Submit</button>
+      </form>
+  
+    
+    <script src="script.js"></script>
+</body>
+</html>
